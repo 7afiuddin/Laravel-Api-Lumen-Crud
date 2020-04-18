@@ -8,7 +8,8 @@ class MyController extends Controller
     
     public function Name($name)
     {
-      return "my Name is ".$name;
+      return response($name)
+             ->header('name',$name);
     }
 
    
