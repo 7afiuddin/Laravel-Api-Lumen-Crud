@@ -12,6 +12,21 @@ class MyController extends Controller
       return response()->json($Array);
         
     }
-
+    public function first()
+    {
+      return redirect('/second');
+        
+    }
+    public function second()
+    {
+      return "Second";
+        
+    }
+    public function download()
+    { 
+      $path='demo.txt';
+      return response()->download($path);
+        
+    }
    
 }

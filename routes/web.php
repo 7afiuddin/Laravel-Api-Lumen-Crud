@@ -12,3 +12,6 @@
 */
 
 $router->get('/','MyController@Name' );
+$router->get('/first','MyController@first' );
+$router->get('/second','MyController@second' );
+$router->get('/download','MyController@download' );
