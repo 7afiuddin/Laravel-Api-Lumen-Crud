@@ -11,16 +11,4 @@
 |
 */
 
-$router->get('/get', function () use ($router) {
-    return "i am from get";
-});
-
-$router->post('/post', function () use ($router) {
-    return "i am from post";
-});
-$router->put('/put', function () use ($router) {
-    return "i am from put";
-});
-$router->delete('/delete', function () use ($router) {
-    return "i am from delete";
-});
+$router->get('/{name}','MyController@Name' );
