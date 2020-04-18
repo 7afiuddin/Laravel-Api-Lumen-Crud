@@ -11,4 +11,4 @@
 |
 */
 
-$router->get('/{name}','MyController@Name' );
+$router->get('/','MyController@Name' );

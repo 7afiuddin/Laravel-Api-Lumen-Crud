@@ -6,10 +6,11 @@ use App\User;
 class MyController extends Controller
 {
     
-    public function Name($name)
+    public function Name()
     {
-      return response($name)
-             ->header('name',$name);
+      $Array=array("Karim"=>"25","Jasim"=>"40");
+      return response()->json($Array);
+        
     }
 
    
